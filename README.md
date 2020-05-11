@@ -1,1 +1,1 @@
-# education-platform-server-
+# education-platform-server
