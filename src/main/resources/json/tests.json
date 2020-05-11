@@ -1,0 +1,74 @@
+[
+  {
+    "testName": "Тест 1",
+    "testUniqNumber": 1,
+    "tasks": [
+      {
+        "question": "Вопрос 1",
+        "correctAnswer": 1,
+        "score": 2,
+        "answers": [
+          {
+            "textAnswer": "Ответ 1",
+            "numberOfAnswer": 1
+          },
+          {
+            "textAnswer": "Ответ 2",
+            "numberOfAnswer": 2
+          }
+        ]
+      },
+      {
+        "question": "Вопрос 2",
+        "correctAnswer": 2,
+        "score": 2,
+        "answers": [
+          {
+            "textAnswer": "Ответ 1",
+            "numberOfAnswer": 1
+          },
+          {
+            "textAnswer": "Ответ 2",
+            "numberOfAnswer": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "testName": "Тест 2",
+    "testUniqNumber": 2,
+    "tasks": [
+      {
+        "question": "Вопрос 1",
+        "correctAnswer": 1,
+        "score": 2,
+        "answers": [
+          {
+            "textAnswer": "Ответ 1",
+            "numberOfAnswer": 1
+          },
+          {
+            "textAnswer": "Ответ 2",
+            "numberOfAnswer": 2
+          }
+        ]
+      },
+      {
+        "question": "Вопрос 2",
+        "correctAnswer": 2,
+        "score": 2,
+        "answers": [
+          {
+            "textAnswer": "Ответ 1",
+            "numberOfAnswer": 1
+          },
+          {
+            "textAnswer": "Ответ 2",
+            "numberOfAnswer": 2
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /education
+
+postgresql:
+  host: 127.0.0.1
+  port: 5432
+  database: postgres
+  username: postgres
+  password: postgres
+
+education:
+  tests-path: json/tests.json
+
+spring:
+  application:
+    name: education-platform-server
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+      use-new-id-generator-mappings: true
+    properties:
+      hibernate:
+        show_sql: false
+        use_sql_comments: false
+        format_sql: true
+        temp:
+          use_jdbc_metadata_defaults: false
+  datasource:
+    url: jdbc:postgresql://${postgresql.host}:${postgresql.port}/${postgresql.database}
+    username: ${postgresql.username}
+    password: ${postgresql.password}
+    driver-class-name: org.postgresql.Driver
+    continue-on-error: true
+    platform: postgres
+    initialization-mode: always
