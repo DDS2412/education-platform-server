@@ -25,4 +25,7 @@ public class Test implements Identifiable<Integer> {
 
     @OneToMany(mappedBy = "test", targetEntity = Task.class, cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Task> tasks;
+
+    @OneToMany(mappedBy = "test", targetEntity = UserTask.class, cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<UserTask> userTests;
 }

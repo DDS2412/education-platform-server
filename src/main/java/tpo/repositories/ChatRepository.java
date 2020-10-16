@@ -2,12 +2,12 @@ package tpo.repositories;
 
 import org.springframework.data.jpa.repository.support.JpaRepositoryImplementation;
 import org.springframework.stereotype.Repository;
-import tpo.domains.Test;
+import tpo.domains.Chat;
+import tpo.domains.User;
 
 import java.util.List;
-import java.util.Optional;
 
 @Repository
-public interface TestRepository extends JpaRepositoryImplementation<Test, Integer> {
-    Optional<Test> findById(Integer id);
+public interface ChatRepository extends JpaRepositoryImplementation<Chat, Integer> {
+    List<Chat> findAllByUsers(List<User> users);
 }

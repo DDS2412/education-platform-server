@@ -14,5 +14,5 @@ public class TaskJsonDto {
 
     private Integer correctAnswer;
 
-    private Double score;
+    private Double maxScore;
 }

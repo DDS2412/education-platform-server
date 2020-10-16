@@ -12,4 +12,6 @@ public interface TestService {
     List<SimplifiedTestDto> getAllTests();
 
     TestDto getTestById(Integer id);
+
+    String getTestTitleById(Integer testId);
 }

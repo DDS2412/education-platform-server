@@ -1,6 +1,8 @@
 package tpo.services.impl;
 
 import org.springframework.stereotype.Service;
+import tpo.domains.Answer;
+import tpo.domains.Task;
 import tpo.domains.Test;
 import tpo.dtos.TestDto;
 import tpo.dtos.json.TestJsonDto;
@@ -38,13 +40,22 @@ public class TestServiceImpl implements TestService {
     public void addTestsToDB(List<TestJsonDto> testJsonDtos) {
         List<Test> tests = testJsonDtos.stream().map(testJsonMapper::toEntity).collect(Collectors.toList());
 
+        for (Test test : tests){
+            for(Task task : test.getTasks()){
+                task
+                        .setTest(test)
+                        .getAnswers()
+                        .forEach(answer -> answer.setTask(task));
+            }
+        }
+
         testRepository.saveAll(tests);
     }
 
     @Override
     public List<SimplifiedTestDto> getAllTests() {
         return testRepository
-                .getAll()
+                .findAll()
                 .stream()
                 .map(simplifiedTestMapper::toDto)
                 .collect(Collectors.toList());
@@ -54,5 +65,10 @@ public class TestServiceImpl implements TestService {
     public TestDto getTestById(Integer id) {
         Optional<Test> optionalTest = testRepository.findById(id);
         return optionalTest.map(testMapper::toDto).orElse(null);
+    }
+
+    public String getTestTitleById(Integer testId) {
+        Optional<Test> optionalTest = testRepository.findById(testId);
+        return optionalTest.map(Test::getTestName).orElse(null);
     }
 }

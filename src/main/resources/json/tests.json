@@ -1,35 +1,81 @@
 [
   {
-    "testName": "Тест 1",
+    "testName": "Статистика",
     "testUniqNumber": 1,
     "tasks": [
       {
-        "question": "Вопрос 1",
-        "correctAnswer": 1,
-        "score": 2,
+        "question": "Статистика как наука изучает:",
+        "correctAnswer": 2,
+        "maxScore": 2,
         "answers": [
           {
-            "textAnswer": "Ответ 1",
+            "textAnswer": "единичные явления;",
             "numberOfAnswer": 1
           },
           {
-            "textAnswer": "Ответ 2",
+            "textAnswer": "массовые явления",
             "numberOfAnswer": 2
+          },
+          {
+            "textAnswer": "периодические события",
+            "numberOfAnswer": 3
           }
         ]
       },
       {
-        "question": "Вопрос 2",
-        "correctAnswer": 2,
-        "score": 2,
+        "question": "Термин «статистика» происходит от слова:",
+        "correctAnswer": 3,
+        "maxScore": 2,
         "answers": [
           {
-            "textAnswer": "Ответ 1",
+            "textAnswer": "статика",
             "numberOfAnswer": 1
           },
           {
-            "textAnswer": "Ответ 2",
+            "textAnswer": "статный",
             "numberOfAnswer": 2
+          },
+          {
+            "textAnswer": "статус",
+            "numberOfAnswer": 3
+          }
+        ]
+      },
+      {
+        "question": "Статистика изучает явления и процессы посредством изучения:",
+        "correctAnswer": 2,
+        "maxScore": 2,
+        "answers": [
+          {
+            "textAnswer": "определенной информации",
+            "numberOfAnswer": 1
+          },
+          {
+            "textAnswer": "статистических показателей",
+            "numberOfAnswer": 2
+          },
+          {
+            "textAnswer": "признаков различных явлений",
+            "numberOfAnswer": 3
+          }
+        ]
+      },
+      {
+        "question": "Статистическая совокупность – это:",
+        "correctAnswer": 2,
+        "maxScore": 2,
+        "answers": [
+          {
+            "textAnswer": "множество изучаемых разнородных объектов",
+            "numberOfAnswer": 1
+          },
+          {
+            "textAnswer": "множество единиц изучаемого явления",
+            "numberOfAnswer": 2
+          },
+          {
+            "textAnswer": "группа зафиксированных случайных событий",
+            "numberOfAnswer": 3
           }
         ]
       }
@@ -42,7 +88,7 @@
       {
         "question": "Вопрос 1",
         "correctAnswer": 1,
-        "score": 2,
+        "maxScore": 2,
         "answers": [
           {
             "textAnswer": "Ответ 1",
@@ -57,7 +103,7 @@
       {
         "question": "Вопрос 2",
         "correctAnswer": 2,
-        "score": 2,
+        "maxScore": 2,
         "answers": [
           {
             "textAnswer": "Ответ 1",
